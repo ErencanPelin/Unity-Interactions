@@ -1,0 +1,17 @@
+{
+  "author": {
+    "name": "erencanpelin"
+  },
+  "dependencies": {},
+  "description": "Interactions as a Unity Package.",
+  "displayName": "Unity Interactions",
+  "keywords": [
+    "interactions",
+    "unity",
+    "base"
+  ],
+  "name": "com.eren.unity-interactions",
+  "unity": "6000.1",
+  "unityRelease": "7f1",
+  "version": "1.0.0"
+}
