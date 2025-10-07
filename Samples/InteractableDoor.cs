@@ -13,8 +13,8 @@ namespace UnityInteractions.Samples
 {
     public sealed class InteractableDoor : MonoBehaviour, IInteractable
     {
-        [SerializeField] private UnityAction onDoorOpen = delegate { };
-        [SerializeField] private UnityAction onDoorClose = delegate { };
+        [SerializeField] private UnityEvent onDoorOpen;
+        [SerializeField] private UnityEvent onDoorClose;
 
         private bool isOpen;
 
