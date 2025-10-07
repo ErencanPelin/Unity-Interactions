@@ -5,27 +5,27 @@
 // Date: 22/09/2025
 // -----------------------------------------------------
 
-using Interactions.Core;
+using UnityInteractions.Core;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Interactions.Interactables
+namespace UnityInteractions.Samples
 {
     public sealed class InteractableDoor : MonoBehaviour, IInteractable
     {
         [SerializeField] private UnityAction onDoorOpen = delegate { };
         [SerializeField] private UnityAction onDoorClose = delegate { };
 
-        private bool _isOpen;
+        private bool isOpen;
 
         public string GetInteractionPrompt(IInteractionContext context) => "Open Door";
 
-        public bool CanInteract(IInteractionContext context) => context.CurrentInteraction == null;
+        public bool CanInteract(IInteractionContext context) => context.ActiveInteraction == null;
 
         public void Interact(IInteractionContext context)
         {
-            _isOpen = !_isOpen;
-            if (_isOpen) onDoorClose.Invoke();
+            isOpen = !isOpen;
+            if (isOpen) onDoorClose.Invoke();
             else onDoorOpen.Invoke();
         }
     }

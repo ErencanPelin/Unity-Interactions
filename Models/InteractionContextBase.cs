@@ -5,10 +5,10 @@
 // Date: 22/09/2025
 // -----------------------------------------------------
 
-using Interactions.Core;
+using UnityInteractions.Core;
 using UnityEngine;
 
-namespace Interactions.Models
+namespace UnityInteractions.Models
 {
     /// <summary>
     /// A basic implementation of IInteractionContext. Use this or implement your own. Or extend this class.
@@ -16,7 +16,7 @@ namespace Interactions.Models
     public class InteractionContextBase : IInteractionContext
     {
         public Transform InteractorTransform { get; private set; }
-        public IInteractable CurrentInteraction { get; private set; }
+        public IInteractable ActiveInteraction { get; private set; }
 
         // Builder pattern for initialising interaction context values
         public InteractionContextBase WithInteractorTransform(Transform interactorTransform)
@@ -27,7 +27,7 @@ namespace Interactions.Models
 
         public InteractionContextBase WithCurrentInteraction(IInteractable currentInteraction)
         {
-            CurrentInteraction = currentInteraction;
+            ActiveInteraction = currentInteraction;
             return this;
         }
     }

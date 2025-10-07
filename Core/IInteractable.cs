@@ -5,7 +5,7 @@
 // Date: 22/09/2025
 // -----------------------------------------------------
 
-namespace Interactions.Core
+namespace UnityInteractions.Core
 {
     public interface IInteractable
     {

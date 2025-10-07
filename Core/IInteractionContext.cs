@@ -7,7 +7,7 @@
 
 using UnityEngine;
 
-namespace Interactions.Core
+namespace UnityInteractions.Core
 {
     /// <summary>
     /// The context passed to an interactable
@@ -22,8 +22,8 @@ namespace Interactions.Core
 
         /// <summary>
         /// The current interactable being interacted with in case the interactable needs to make a decision based on a current interaction
-        /// <example>e.g. if the player is already interacting with a key, they can interact with a door</example>
+        /// <example>e.g. the player can only interact with something if they're not already interacting with something else</example>
         /// </summary>
-        public IInteractable CurrentInteraction { get; }
+        public IInteractable ActiveInteraction { get; }
     }
 }

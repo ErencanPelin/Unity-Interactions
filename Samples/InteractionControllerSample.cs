@@ -5,11 +5,11 @@
 // Date: 22/09/2025
 // -----------------------------------------------------
 
-using Interactions.Core;
-using Interactions.Models;
+using UnityInteractions.Core;
+using UnityInteractions.Models;
 using UnityEngine;
 
-namespace Interactions.Controllers
+namespace UnityInteractions.Samples
 {
     /// <summary>
     /// A sample interaction controller to show how to create and use an interaction context
