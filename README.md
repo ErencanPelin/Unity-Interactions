@@ -1,5 +1,5 @@
 # Unity Interactions
-An extensible unity interaction system. Versatile enough to be something I can re-use across many different projects, 2D, 3D, Multiplayer or single player.
+An extensible unity interaction system. Versatile enough to be something that can be re-used across any project. From 2D to 3D to Multiplayer or single player.
 
 ## How it works
 ### Interactables
@@ -12,3 +12,9 @@ You can implement [IInteractionContext](Core/IInteractionContext.cs) in your own
 
 ### Interaction Detector
 The interaction detector detects how the player find interactables in the scene. You may just need to find the nearest, or all nearby interactables. You may need interactions to be detected based on where the mouse is or where the player is looking. You can implement your own custom detector function by implementing the [IInteractionDetector](Detectors/IInteractionDetector.cs) interface. There a few samples ready for you to use in [/Detectors](/Detectors).
+
+## Contributing
+See [CONTRIBUTING.md](CONTRIBUTING.md)
+
+## License
+See [LICENSE](LICENSE)
