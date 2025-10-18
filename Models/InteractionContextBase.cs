@@ -16,7 +16,7 @@ namespace UnityInteractions.Models
     public class InteractionContextBase : IInteractionContext
     {
         public Transform InteractorTransform { get; private set; }
-        public IInteractable ActiveInteraction { get; private set; }
+        public IInteractable ActiveInteraction { get; set; }
 
         // Builder pattern for initialising interaction context values
         public InteractionContextBase WithInteractorTransform(Transform interactorTransform)

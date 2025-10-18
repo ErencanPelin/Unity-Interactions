@@ -24,6 +24,6 @@ namespace UnityInteractions.Core
         /// The current interactable being interacted with in case the interactable needs to make a decision based on a current interaction
         /// <example>e.g. the player can only interact with something if they're not already interacting with something else</example>
         /// </summary>
-        public IInteractable ActiveInteraction { get; }
+        public IInteractable ActiveInteraction { get; set; }
     }
 }
